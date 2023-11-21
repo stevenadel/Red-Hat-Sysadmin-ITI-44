@@ -1,2 +1,2 @@
-# red-hat-sysadmin-iti-44
-Red Hat System Administration I assignments repo
+# Red Hat Sysadmin Assignments
+Each assignment with its README is inside its own folder

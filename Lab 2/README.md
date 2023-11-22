@@ -52,10 +52,20 @@ source: r--, target parent: -wx
 #### c. Delete a file
 file: ---, parent directory: -wx
 #### d. Change to a directory
+--x
 #### e. List a directory content (ls command)
+r-x
 #### f. View a file content (more/cat command)
+r--
 #### g. Modify a file content
-
+-w-
 ### 18. Create a file with permission 444. Try to edit in it and to remove it? Note what happened.
-
+touch file1\
+chmod 444 file1\
+vim file1 (file readonly in vim warning)\
+rm file1 (rm: remove write-protected regular empty file 'file1'?)
 ### 19. What is the difference between the “x” permission for a file and for a directory?
+excute permission for file: run file as program/script\
+for directory: enter the directory
+
+## Screenshots

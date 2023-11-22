@@ -69,3 +69,7 @@ excute permission for file: run file as program/script\
 for directory: enter the directory
 
 ## Screenshots
+![Screenshot from 2023-11-22 15-13-14](https://github.com/stevenadel/red-hat-sysadmin-iti-44/assets/111876286/48099289-2263-4a48-bb74-917533840871)
+![Screenshot from 2023-11-22 15-17-39](https://github.com/stevenadel/red-hat-sysadmin-iti-44/assets/111876286/0de44353-8f39-49c3-b3f5-6692ca3d85e9)
+![Screenshot from 2023-11-23 03-05-40](https://github.com/stevenadel/red-hat-sysadmin-iti-44/assets/111876286/c3a6a125-313f-4a87-863f-921f885ecbdd)
+![Screenshot from 2023-11-23 03-08-29](https://github.com/stevenadel/red-hat-sysadmin-iti-44/assets/111876286/88a631cf-58a3-43dd-a47b-2469e39050c3)

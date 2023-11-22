@@ -37,7 +37,7 @@ chmod 631 oldpasswd
 #### b. Change your default permissions to be as above.
 umask 146
 #### c. What is the maximum permission a file can have, by default when it is just created? And what is that for directory.
-max for file: 666
+max for file: 666\
 max for folder: 777
 #### d. Change your default permissions to be no permission to everyone then create a directory and a file to verify.
 umask a-rwx\

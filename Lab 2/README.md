@@ -18,25 +18,39 @@ Users & groups
 
 -------------------------------------------------------------------------------------------------------------------
 
-# Lab 3
+# Part 2 (Day 3)
 
 ### 13. Create a folder called myteam in your home directory and change its permissions to read only for the owner.
+mkdir myteam; chmod 400 myteam 
 
 ### 14. Log out and log in by another user
+su - username
 
 ### 15. Try to access (by cd command) the folder (myteam)
+cd /home/my-username/myteam\
+(output: -bash: cd: /home/rhel/myteam: Permission denied)
 
 ### 16. Using the command Line
-#### a. Change the permissions of oldpasswd file to give owner read and write
-#### b. permissions and for group write and execute and execute only for the others (using chmod in 2 different ways)
-#### c. Change your default permissions to be as above.
-#### d. What is the maximum permission a file can have, by default when it is just created? And what is that for directory.
-#### e. Change your default permissions to be no permission to everyone then create a directory and a file to verify.
-
+#### a. Change the permissions of oldpasswd file to give owner read and write permissions and for group write and execute and execute only for the others (using chmod in 2 different ways)
+chmod u=rw,g=wx,o=x oldpasswd\
+chmod 631 oldpasswd
+#### b. Change your default permissions to be as above.
+umask 146
+#### c. What is the maximum permission a file can have, by default when it is just created? And what is that for directory.
+max for file: 666
+max for folder: 777
+#### d. Change your default permissions to be no permission to everyone then create a directory and a file to verify.
+umask a-rwx\
+mkdir dir1\
+touch file1\
+ls -l
 ### 17. What are the minimum permission needed for:
 #### a. Copy a directory (permission for source directory and permissions for target parent directory)
+source: r-x, target parent: -wx
 #### b. Copy a file (permission for source file and and permission for target parent directory)
+source: r--, target parent: -wx
 #### c. Delete a file
+file: ---, parent directory: -wx
 #### d. Change to a directory
 #### e. List a directory content (ls command)
 #### f. View a file content (more/cat command)

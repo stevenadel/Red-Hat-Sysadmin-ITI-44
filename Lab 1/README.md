@@ -1,5 +1,5 @@
 # Lab 1
-Answers in "lab 1.pdf"
+Answers in "lab 1.pdf" (temp, all other labs are in readme)
 
 ## Screenshots
 ![Q3](https://github.com/stevenadel/red-hat-sysadmin-iti-44/assets/111876286/6f108db6-c993-47b8-830b-f746a9499bd2)

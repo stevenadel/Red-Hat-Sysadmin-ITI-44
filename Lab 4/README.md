@@ -12,7 +12,7 @@ cut -f1,5 -d: /etc/passwd | grep ^g
 cut -f1,5 -d: /etc/passwd | grep ^g | sort -t : -k2 -o sorted_users
 ### 6. Write two commands: first: to search for all files on the system that named .bash_profile. Second: sorts the output of ls command on / recursively, Saving their output and error in 2 different files and sending them to the background.
 find / -name .bash_profile\
-ls -R / > output 2> errors
+ls -R / > output 2> errors | sort
 ### 7. Display the number of users who is logged now to the system.
 who | wc -l
 ### 8. Display lines 7 to line 10 of /etc/passwd file

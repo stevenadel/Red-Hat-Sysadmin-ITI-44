@@ -1,5 +1,25 @@
 # Lab 1
-Answers in "lab 1.pdf" (temp, all other labs are in readme)
+
+### 1. RHEL 9 installed
+### 2. cat prints the whole file to output, more makes the text scroll-able by paging the file through the terminal window size
+### 3. rm removes both files and directories, rmdir only removes directories
+### 4. Q4:
+#### a. rm: cannot remove folder: is a directory, to overcome use -r flag
+#### b. both dir12 and its parent dir1 are removed
+#### c. absolute: /home/user/docs/mycv, relative: ./docs/mycv
+### 5. cp /etc/passwd ~/mypasswd
+### 6. mv mypasswd oldpasswd
+### 7. Q7:
+#### a. cd ~
+#### b. cd /home/username/
+#### c. cd ../..; cd ~
+#### d. cd ../..; cd /home/username/
+### 8. ls /usr/bin | grep w
+### 9. head -4 /etc/passwd
+### 10. tail -7 /etc/passwd
+### 11. man -a passwd
+### 12. man -s 5 passwd
+### 13. man -k passwd
 
 ## Screenshots
 ![Q3](https://github.com/stevenadel/red-hat-sysadmin-iti-44/assets/111876286/6f108db6-c993-47b8-830b-f746a9499bd2)

@@ -1,4 +1,4 @@
-# Lab 6
+![Screenshot from 2023-12-05 14-37-50](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/0d681aae-7ee5-4f17-8fef-d5642e5993fb)# Lab 6
 ### 1.	Use systemctl to view the status of all the system services.
 ```bash
 systemctl status
@@ -6,44 +6,62 @@ systemctl status
 ![Screenshot from 2023-12-05 13-34-16](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/0abda6fb-8038-4f06-8824-33b667b9b783)
 ### 2.	Change the default run level back to multi-user.target and reboot.
 ```bash
-
+systemctl set-default multi-user.target
+sudo shutdown -r 0
 ```
+![Screenshot from 2023-12-05 13-34-51](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/c7d83cfc-9830-404a-bda7-b8b55a99f682)
 ### 3.	Send mail to the root user.
 ```bash
-
+mail root
 ```
+![Screenshot from 2023-12-05 14-11-02](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/51a56cad-6e68-47a1-b1af-7185468adb25)
 ### 4.	Verify that you have received this mail.
 ```bash
-
+su -
+mail
 ```
+![Screenshot from 2023-12-05 14-13-03](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/bde9571f-5e64-4f48-9d22-33d1bd112efe)
 ### 5.	Use  systemctl utility to stop postfix service
 ```bash
-
+systemctl stop postfix
 ```
+![Screenshot from 2023-12-05 14-17-12](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/e4d340ec-871e-49a9-b7ae-820905a5afda)
 ### 6.	Send mail again to the root user.
 ```bash
-
+mail root
 ```
+![Screenshot from 2023-12-05 14-22-31](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/45c58270-4c30-4212-bab9-6d13e37a31a0)
 ### 7.	Verify that you have received this mail.
 ```bash
-
+su -
+mail
+# second mail not received
 ```
+![Screenshot from 2023-12-05 14-23-56](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/b7ddff91-4c86-412d-80e7-279b772bbba5)
 ### 8.	Use systemctl utility to start postfix service
 ```bash
-
+systemctl start postfix
 ```
+![Screenshot from 2023-12-05 14-31-06](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/a4d12eaf-bd32-433a-9625-fffeee7ced25)
 ### 9.	Verify that you have received this mail.
 ```bash
-
+su -
+mail
 ```
+![Screenshot from 2023-12-05 14-33-04](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/830d91d5-448b-4863-90a6-ecd813fe55d7)
 ### 10.	Edit in the GRUB2 configuration file and change the timeout variable equal 20 seconds.
 ```bash
-
+sudo vim /etc/default/grub
+sudo grub2-mkconfig
 ```
+![Screenshot from 2023-12-05 14-37-50](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/fc203bce-0619-41ea-b2cf-b285c716ba7c)
 ### 11.	 Edit in the GRUB2 configuration file and change your default operating system
 ```bash
-
+sudo vim /etc/default/grub
+cat /etc/default/grub    # changed to Windows, but don't worry won't leave it like this for long ;)
+sudo grub2-mkconfig
 ```
+![Screenshot from 2023-12-05 14-45-40](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/f1b75f58-1046-4b01-a0a0-46638e433f66)
 ### 12.	You want to know some information about the status of the system every ten minutes today between the hours of  8:00 AM and 5:00 PM. to help investigate some performance issues you have been having. You suspect it might be memory related and want to keep an eye on those resources.
 ```bash
 
@@ -75,59 +93,64 @@ How could you have the message only appear in the "logging server's" files?
 
 ```
 ## Using yum
-17. Attempt to run the command gnuplot. You should find that it is not installed.
+### 17. Attempt to run the command gnuplot. You should find that it is not installed.
 ```bash
 
 ```
-18. Search for the plotting packages.
+### 18. Search for the plotting packages.
 ```bash
 
 ```
-19. Find out more information about the gunuplot package.
+### 19. Find out more information about the gunuplot package.
 ```bash
 
 ```
-20. Install the gnuplot package.
+### 20. Install the gnuplot package.
 ```bash
 
 ```
-21. Attempt to remove the gnuplot package, but say no. How many packages would be removed?
+### 21. Attempt to remove the gnuplot package, but say no. How many packages would be removed?
 ```bash
 
 ```
-21. Attempt to remove the gunplot-common package but say no. How many packages would be removed?
+### 21. Attempt to remove the gunplot-common package but say no. How many packages would be removed?
 ```bash
 
 ```
 ## Using rpm
-22. List all installed packages in your system.
+### 22. List all installed packages in your system.
 ```bash
 
 ```
-23. View the files in the initscripts package
+### 23. View the files in the initscripts package
 ```bash
 
 ```
-24. Get general information about bash rpm.
+### 24. Get general information about bash rpm.
 ```bash
 
 ```
-25. Have the files from the pam package changed since it was installed.
+### 25. Have the files from the pam package changed since it was installed.
 ```bash
 
 ```
-26. Which installed packages have gnome in their names?
+### 26. Which installed packages have gnome in their names?
 ```bash
 
 ```
-27. Install any uninstalled package from RH Enterprise Linux cds
+### 27. Install any uninstalled package from RH Enterprise Linux cds
 ```bash
 
 ```
-28. Search for software resemble the Photoshop software other than Gimp and install it.
+### 28. Search for software resemble the Photoshop software other than Gimp and install it.
 ```bash
 
 ```
-30. Create the file /etc/yum.repos.d/cdrom.repo to enable install from
-the iso from the iso of Red Hat.
-31. Try to install any package from the new repository
+### 30. Create the file /etc/yum.repos.d/cdrom.repo to enable install from the iso from the iso of Red Hat.
+```bash
+
+```
+### 31. Try to install any package from the new repository
+```bash
+
+```

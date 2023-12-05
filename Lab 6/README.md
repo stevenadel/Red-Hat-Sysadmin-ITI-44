@@ -64,8 +64,9 @@ sudo grub2-mkconfig
 ![Screenshot from 2023-12-05 14-45-40](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/f1b75f58-1046-4b01-a0a0-46638e433f66)
 ### 12.	You want to know some information about the status of the system every ten minutes today between the hours of  8:00 AM and 5:00 PM. to help investigate some performance issues you have been having. You suspect it might be memory related and want to keep an eye on those resources.
 ```bash
-
+crontab -e
 ```
+![Screenshot from 2023-12-05 15-16-17](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/4b16e4e9-66d5-4b36-b164-27ed7676b735)
 ### 13.	Use mail as the root user to check for e-mail from the cron jobs you have scheduled.
 ```bash
 

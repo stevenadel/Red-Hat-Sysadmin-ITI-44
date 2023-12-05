@@ -1,4 +1,4 @@
-![Screenshot from 2023-12-05 14-37-50](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/0d681aae-7ee5-4f17-8fef-d5642e5993fb)# Lab 6
+# Lab 6
 ### 1.	Use systemctl to view the status of all the system services.
 ```bash
 systemctl status
@@ -10,6 +10,7 @@ systemctl set-default multi-user.target
 sudo shutdown -r 0
 ```
 ![Screenshot from 2023-12-05 13-34-51](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/c7d83cfc-9830-404a-bda7-b8b55a99f682)
+![Screenshot from 2023-12-05 13-36-21](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/54ec3151-e371-4a7a-9070-9669a4261ac6)
 ### 3.	Send mail to the root user.
 ```bash
 mail root
@@ -69,15 +70,20 @@ crontab -e
 ![Screenshot from 2023-12-05 15-16-17](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/4b16e4e9-66d5-4b36-b164-27ed7676b735)
 ### 13.	Use mail as the root user to check for e-mail from the cron jobs you have scheduled.
 ```bash
-
+su -
+mail
 ```
+![Screenshot from 2023-12-05 19-23-25](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/28a61a16-6ca1-4671-bbfb-d0150b92d44c)
 ### 14.	How could you send the output from these cron jobs to another e-mail address (the manager user)?
 ```bash
-
+crontab -e
+#inside crontab -e add MAILTO=manager
 ```
+![Screenshot from 2023-12-05 19-25-10](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/f5522f3c-f992-425b-a295-57d5816de150)
 ### 15.	Use mail as the manager user to check for e-mail from the cron jobs you have scheduled.
 ```bash
-
+su - manager
+mail
 ```
 ### 16.	Bonus
 ```

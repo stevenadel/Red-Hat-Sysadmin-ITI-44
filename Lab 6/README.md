@@ -67,7 +67,7 @@ sudo grub2-mkconfig
 ```bash
 crontab -e
 ```
-![Screenshot from 2023-12-05 15-16-17](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/4b16e4e9-66d5-4b36-b164-27ed7676b735)
+![Screenshot from 2023-12-06 14-44-58](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/1c08a646-118b-46bb-8fc6-e5978c9058a3)
 ### 13.	Use mail as the root user to check for e-mail from the cron jobs you have scheduled.
 ```bash
 su -

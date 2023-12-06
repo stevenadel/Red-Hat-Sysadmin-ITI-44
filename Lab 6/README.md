@@ -102,62 +102,60 @@ How could you have the message only appear in the "logging server's" files?
 ## Using yum
 ### 17. Attempt to run the command gnuplot. You should find that it is not installed.
 ```bash
-
+gnuplot
 ```
+![Screenshot from 2023-12-06 10-51-34](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/d21ff1bd-59c9-4424-b61e-46b9cedcad98)
 ### 18. Search for the plotting packages.
 ```bash
-
+yum search plot
 ```
+![Screenshot from 2023-12-06 10-52-58](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/8f1efad1-767f-4abf-a8c4-b56a89fe6ef2)
 ### 19. Find out more information about the gunuplot package.
 ```bash
-
+yum info gnuplot
 ```
+![Screenshot from 2023-12-06 11-07-32](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/eed2a371-1239-4cce-9adc-854a0fe2b782)
 ### 20. Install the gnuplot package.
 ```bash
-
+sudo yum install gnuplot
 ```
+![Screenshot from 2023-12-06 11-09-20](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/f41e026d-1bb9-45f7-8c0e-8cd4d60852ec)
 ### 21. Attempt to remove the gnuplot package, but say no. How many packages would be removed?
 ```bash
-
+sudo yum remove gnuplot
+# 4 packages to be removed
 ```
+![Screenshot from 2023-12-06 09-11-29](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/60be2932-6c37-4cf9-bb67-a2837bfd23d2)
 ### 21. Attempt to remove the gunplot-common package but say no. How many packages would be removed?
 ```bash
-
+sudo yum remove gnuplot-common
+# 4 packages to be removed
 ```
+![Screenshot from 2023-12-06 09-13-03](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/ad9a3b71-62aa-4de5-941e-9f08a561e408)
+
 ## Using rpm
 ### 22. List all installed packages in your system.
 ```bash
-
+rpm -qa
 ```
+![Screenshot from 2023-12-06 09-14-13](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/d839dca7-09a1-4e3c-bcca-e1c44da30f70)
 ### 23. View the files in the initscripts package
 ```bash
-
+rpm -ql initscripts
 ```
+![Screenshot from 2023-12-06 09-19-55](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/e3fd06f1-3cef-49e5-8cf4-2e4fb15a29db)
 ### 24. Get general information about bash rpm.
 ```bash
-
+rpm -qi bash
 ```
+![Screenshot from 2023-12-06 09-23-52](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/419f1aa0-cad6-4e94-bbaf-4a38d23721a9)
 ### 25. Have the files from the pam package changed since it was installed.
 ```bash
-
+rpm -V pam
 ```
+![Screenshot from 2023-12-06 09-30-51](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/6643aed7-d8a2-4889-a75d-f31b45e93170)
 ### 26. Which installed packages have gnome in their names?
 ```bash
-
+rpm -qa | grep gnome
 ```
-### 27. Install any uninstalled package from RH Enterprise Linux cds
-```bash
-
-```
-### 28. Search for software resemble the Photoshop software other than Gimp and install it.
-```bash
-
-```
-### 30. Create the file /etc/yum.repos.d/cdrom.repo to enable install from the iso from the iso of Red Hat.
-```bash
-
-```
-### 31. Try to install any package from the new repository
-```bash
-
-```
+![Screenshot from 2023-12-06 09-39-36](https://github.com/stevenadel/Red-Hat-Sysadmin-ITI-44/assets/111876286/7e4293d6-99e2-4064-920a-568247a33adb)
